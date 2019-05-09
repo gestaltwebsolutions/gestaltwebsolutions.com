@@ -75,6 +75,6 @@ Looking for more guidance? Full documentation for Gatsby lives [on the website](
 
 <!-- AUTO-GENERATED-CONTENT:END -->
 
-## 💫 Deploy `npm run deploy`
+## 💫 Deploy `yarn start`
 
 Deploys to GitHub Pages and http://gestaltwebsolutions.com
