@@ -1,19 +1,36 @@
-import React from 'react'
-import { Link } from 'gatsby'
+import React from "react";
+import { Link } from "gatsby";
+import Layout from "../components/layout";
+import SEO from "../components/seo";
+import HeroImage from "../components/hero-image";
 
-import Layout from '../components/layout'
-import SEO from '../components/seo'
-
-const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-    <h1>Under Construction</h1>
-    <p>Sorry, nothing to see here yet...</p>
-    <div style={{maxWidth: 600}}>
-      <img src="/undraw_under_construction_46pa.svg" alt="Under Construction" />
-    </div>
-    <Link to="/about/">About Us</Link>
-  </Layout>
-)
-
-export default IndexPage
+export default function IndexPage() {
+  return (
+    <Layout>
+      <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
+      <div className="flex items-center">
+        <div className="flex-1">
+          <h1 className="text-5xl">
+            Bringing the <span className="text-teal font-bold">web</span> to you
+          </h1>
+          <h2 className="text-4xl">
+            We build world-class <span className="text-teal">websites</span>,{" "}
+            <span className="text-teal">applications</span>, and{" "}
+            <span className="text-teal">tools</span>
+          </h2>
+          <div className="text-center">
+            <Link
+              to="/services"
+              className="bg-orange hover:bg-orange-light text-white font-bold py-2 px-4 rounded"
+            >
+              Our Services
+            </Link>
+          </div>
+        </div>
+        <div className="flex-1">
+          <HeroImage />
+        </div>
+      </div>
+    </Layout>
+  );
+}
