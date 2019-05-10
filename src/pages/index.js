@@ -7,7 +7,22 @@ import HeroImage from "../components/hero-image";
 export default function IndexPage() {
   return (
     <Layout>
-      <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
+      <SEO
+        title="Home"
+        description={`
+        We are technology consultants skilled in building a solutions for
+        businesses and private projects using the latest web technologies.
+      `}
+        keywords={[
+          `software`,
+          `consultants`,
+          `websites`,
+          `database`,
+          `applications`,
+          `development`,
+          `engineers`
+        ]}
+      />
       <div className="flex items-center">
         <div className="flex-1">
           <h1 className="text-5xl">

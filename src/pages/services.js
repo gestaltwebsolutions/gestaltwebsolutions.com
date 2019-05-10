@@ -16,7 +16,24 @@ export default function Services() {
 
   return (
     <Layout wrap={wrap}>
-      <SEO title="Services" />
+      <SEO
+        title="Services"
+        description={`
+          We are software consultants who build websites, applications,
+          databases, and more.
+          `}
+        keywords={[
+          `websites`,
+          `consultants`,
+          `database`,
+          `applications`,
+          `development`,
+          `automation`,
+          `testing`,
+          `code`,
+          `deployments`
+        ]}
+      />
 
       <div className="my-32">
         <div className="flex justify-around">

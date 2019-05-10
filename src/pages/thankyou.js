@@ -7,7 +7,12 @@ import Img from "../components/thank-you";
 export default function ThankYou() {
   return (
     <Layout>
-      <SEO title="Thank You" />
+      <SEO
+        title="Thank You"
+        description={`
+        Thank you for contacting Gestalt Web Solutions LLC. We will reply soon.
+        `}
+      />
       <h1 className="hidden">Thank You</h1> {/* For Accessibility */}
       <div className="mx-auto mt-8" style={{ width: 600 }}>
         <Img />

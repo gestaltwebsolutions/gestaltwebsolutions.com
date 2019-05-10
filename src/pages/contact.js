@@ -5,7 +5,13 @@ import SEO from "../components/seo";
 export default function About() {
   return (
     <Layout>
-      <SEO title="Contact" />
+      <SEO
+        title="Contact"
+        description={`
+          Contact Gestalt Web Solutions LLC for your next project. We can write
+          software, build your website, manage your database, and more.
+        `}
+      />
       <h1>Contact Us</h1>
 
       <div className="w-1/2 mx-auto rounded-b-lg border-t-2 border-orange-dark bg-grey-lighter py-4 px-32">

@@ -27,7 +27,15 @@ export default function About() {
 
   return (
     <Layout>
-      <SEO title="About" />
+      <SEO
+        title="About"
+        description={`
+        Meet the team that created Gestalt Web Solutions LLC. Jeremy has been
+        writing software for over a decade using a variety of languages and 
+        frameworks. Ryan can conquer any technical obstacle with his own blend
+        of ingenuity and grit.
+      `}
+      />
       <h1 className="text-xl">Meet the Team</h1>
       <div className="flex justify-around">
         <Profile
