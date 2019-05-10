@@ -36,6 +36,7 @@ export default function About() {
 
           <p className="hidden">
             Ignore Me: <input name="email_address" type="email" />
+            <input name="form-name" type="hidden" value="contact" />
           </p>
 
           <div className="text-right">
