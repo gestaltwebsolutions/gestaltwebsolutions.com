@@ -40,6 +40,7 @@ export default function About() {
           `}
           github="mrleebo"
           twitter="mrleebo"
+          blog="https://jeremyliberman.com"
           file={jeremy}
         />
         <Profile
@@ -58,45 +59,46 @@ export default function About() {
 }
 
 function Profile(props) {
-  const { name, position, bio, file, even, github, twitter } = props;
+  const { name, position, bio, file, even, github, twitter, blog } = props;
   const color = even ? "teal" : "orange";
 
   return (
     <div
-      className={`w-1/3 m-2 shadow-lg rounded-b-lg border-t-2 border-${color}-darker my-20 bg-${color}-lightest text-${color}-darker pb-1`}
+      className={`relative w-1/3 m-2 shadow-lg rounded-b-lg border-t-2 border-${color}-dark my-20 bg-grey-lightest text-${color}-darker pb-1`}
     >
+      <div className="absolute pin-t pin-r mt-2 mr-2">
+        {twitter && (
+          <SocialMediaLink
+            href={`https://twitter.com/${twitter}`}
+            color={color}
+            icon="fab fa-twitter"
+          />
+        )}
+        {blog && (
+          <SocialMediaLink href={blog} color={color} icon="fas fa-blog" />
+        )}
+        {github && (
+          <SocialMediaLink
+            href={`https://github.com/${github}`}
+            color={color}
+            icon="fab fa-github"
+          />
+        )}
+      </div>
+
       <div
-        className={`mx-auto rounded-full bg-${color}-darker -mt-16 p-px`}
+        className={`mx-auto rounded-full bg-${color}-dark -mt-16 p-px`}
         style={{ width: 150, height: 150 }}
       >
         <Img fluid={file.childImageSharp.fluid} className="rounded-full" />
       </div>
 
-      <div className="w-2/3 mx-auto">
-        <div className="float-right">
-          {github && (
-            <SocialMediaLink
-              href={`https://github.com/${github}`}
-              color={color}
-              icon="github"
-            />
-          )}
-          {twitter && (
-            <SocialMediaLink
-              href={`https://twitter.com/${twitter}`}
-              color={color}
-              icon="twitter"
-            />
-          )}
-        </div>
-
+      <div className="px-8">
         <div className={`text-center text-${color}-darker`}>
-          <h2 className="text-lg mb-2">{name}</h2>
+          <h2 className="text-lg my-2">{name}</h2>
           <span className="ml-4 text-sm opacity-75">{position}</span>
         </div>
-        <p
-          className={`text-${color}-darker text-sm tracking-wide font-serif text-justify`}
-        >
+        <p className={`text-${color}-darker text-sm tracking-wide font-serif`}>
           {bio}
         </p>
       </div>
@@ -110,9 +112,9 @@ function SocialMediaLink({ href, icon, color }) {
       href={href}
       target="_blank"
       rel="noreferrer noopener"
-      className={`hover:text-${color} mr-1 opacity-50`}
+      className={`hover:text-${color} mr-2 opacity-50`}
     >
-      <i className={`fab fa-${icon}`} />
+      <i className={icon} />
     </a>
   );
 }

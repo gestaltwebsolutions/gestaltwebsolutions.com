@@ -86,7 +86,7 @@ function Service({ title, icon, color, children, primary }) {
         primary ? "bg-grey-lightest" : "bg-grey-lighter"
       }`}
     >
-      <div className="p-4 pb-8">
+      <div className="p-4 pb-16">
         <div
           className={`mx-auto w-10 bg-${color} rounded-full p-2 -mt-8 mb-2 text-white text-center`}
         >
