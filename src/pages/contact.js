@@ -14,6 +14,7 @@ export default function About() {
           action="/thankyou"
           method="POST"
           data-netlify="true"
+          netlify-honeypot="email_address"
         >
           <Field label="Name">
             <input
@@ -32,6 +33,10 @@ export default function About() {
           <Field label="Message">
             <textarea name="message" className="input" rows="5" required />
           </Field>
+
+          <p className="hidden">
+            Ignore Me: <input name="email_address" type="email" />
+          </p>
 
           <div className="text-right">
             <button type="submit" className="btn">
