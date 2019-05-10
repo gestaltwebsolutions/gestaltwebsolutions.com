@@ -42,7 +42,9 @@ module.exports = {
           /twitter/,
           /blog/,
           /[mp][trblxy]?-/,
-          /^pin-/
+          /^w-/,
+          /^pin-/,
+          /^float-/
         ] // Be sure to whitelist any patterns you use with interpolated strings, e.g. bg-${color}-dark
         // whitelist: ['whitelist'], // Don't remove this selector
         // ignore: ['/ignored.css', 'prismjs/', 'docsearch.js/'], // Ignore files/folders

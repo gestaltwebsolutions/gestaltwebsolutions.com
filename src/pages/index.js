@@ -19,10 +19,7 @@ export default function IndexPage() {
             <span className="text-teal">tools</span>
           </h2>
           <div className="text-center">
-            <Link
-              to="/services"
-              className="bg-orange hover:bg-orange-light text-white font-bold py-2 px-4 rounded"
-            >
+            <Link to="/services" className="btn">
               Our Services
             </Link>
           </div>

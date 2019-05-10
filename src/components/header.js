@@ -32,6 +32,7 @@ function NavLink({ to, children }) {
       className="block mt-4 lg:inline-block lg:mt-0 hover:text-teal-light mr-4"
       activeClassName="border-b-2 border-teal hover:border-teal-light"
       children={children}
+      partiallyActive
     />
   );
 }
