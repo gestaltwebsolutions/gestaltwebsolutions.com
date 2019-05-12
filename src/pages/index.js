@@ -23,7 +23,7 @@ export default function IndexPage() {
           `engineers`
         ]}
       />
-      <div className="flex items-center">
+      <div className="block md:flex items-center">
         <div className="flex-1">
           <h1 className="text-5xl">
             Bringing the <span className="text-teal font-bold">web</span> to you
@@ -39,7 +39,7 @@ export default function IndexPage() {
             </Link>
           </div>
         </div>
-        <div className="flex-1">
+        <div className="flex-1 hidden lg:block">
           <HeroImage />
         </div>
       </div>

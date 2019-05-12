@@ -14,9 +14,9 @@ export default function ThankYou() {
         `}
       />
       <h1 className="hidden">Thank You</h1> {/* For Accessibility */}
-      <div className="mx-auto mt-8" style={{ width: 600 }}>
+      <div className="w-full lg:w-1/2 mx-auto mt-8">
         <Img />
-        <h2 className="text-center font-serif text-lg px-16 z-10">
+        <h2 className="text-center font-serif text-lg md:px-16 z-10">
           <p>
             We have received your <span className="text-teal">message</span> and
             will send a reply before long.

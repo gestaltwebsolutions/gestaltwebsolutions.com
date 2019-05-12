@@ -5,8 +5,8 @@ import SEO from "../components/seo";
 
 export default function Services() {
   const wrap = (
-    <div className="absolute pin-x bg-blue-darkest text-blue-lightest font-sans px-20 py-4">
-      <div className="w-1/2 mx-auto">
+    <div className="relative pin-x bg-blue-darkest text-blue-lightest font-sans px-4 lg:px-20 py-4">
+      <div className="md:w-1/2 mx-auto">
         <h1 className="text-xl my-0">Services</h1>
         Let us worry about the technology so that you can focus on your business
         or project idea.
@@ -35,8 +35,8 @@ export default function Services() {
         ]}
       />
 
-      <div className="my-32">
-        <div className="flex justify-around">
+      <div>
+        <div className="flex flex-wrap lg:flex-no-wrap justify-around">
           <Service title="Software Consultants" icon="users" color="teal">
             <p>
               Bring us in to start your newest project, or to get an existing
@@ -99,7 +99,7 @@ function ListItem({ children }) {
 function Service({ title, icon, color, children, primary }) {
   return (
     <div
-      className={`w-1/4 relative shadow-lg rounded-lg ${
+      className={`w-full lg:w-1/4 mt-8 mx-2 flex-no-shrink relative shadow-lg rounded-lg ${
         primary ? "bg-grey-lightest" : "bg-grey-lighter"
       }`}
     >

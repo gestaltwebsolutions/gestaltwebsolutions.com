@@ -13,7 +13,7 @@ export default function Header({ siteTitle }) {
         <div className="mr-6 text-teal-dark hover:text-teal-light">
           <Link to="/">{siteTitle}</Link>
         </div>
-        <div className="w-full block lg:flex lg:items-center lg:w-auto text-teal justify-end">
+        <div className="w-full block md:flex md:items-center md:w-auto text-teal justify-end">
           <div className="text-sm">
             <NavLink to="/services">Services</NavLink>
             <NavLink to="/about">About</NavLink>
@@ -29,7 +29,7 @@ function NavLink({ to, children }) {
   return (
     <Link
       to={to}
-      className="block mt-4 lg:inline-block lg:mt-0 hover:text-teal-light mr-4"
+      className="block mt-4 md:inline-block md:mt-0 hover:text-teal-light mr-4"
       activeClassName="border-b-2 border-teal hover:border-teal-light"
       children={children}
       partiallyActive

@@ -14,7 +14,7 @@ export default function About() {
       />
       <h1>Contact Us</h1>
 
-      <div className="w-1/2 mx-auto rounded-b-lg border-t-2 border-orange-dark bg-grey-lighter py-4 px-32">
+      <div className="w-full md:w-1/2 mx-auto rounded-b-lg border-t-2 border-orange-dark bg-grey-lighter py-4 px-4 lg:px-32">
         <form
           name="contact"
           action="/thankyou"

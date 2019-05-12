@@ -51,7 +51,7 @@ export default function Layout({ children, wrap }) {
 
       {wrap}
 
-      <div className="container mx-auto px4 pb6">{children}</div>
+      <div className="container mx-auto px-4 pb-6">{children}</div>
     </>
   );
 }

@@ -9,8 +9,8 @@ export default function ThankYou() {
         childImageSharp {
           # Specify the image processing specifications right in the query.
           # Makes it trivial to update as your page's design changes.
-          fixed(width: 600, height: 400) {
-            ...GatsbyImageSharpFixed
+          fluid(maxWidth: 600) {
+            ...GatsbyImageSharpFluid
           }
         }
       }
@@ -19,8 +19,8 @@ export default function ThankYou() {
 
   return (
     <Img
-      fixed={file.childImageSharp.fixed}
       critical
+      fluid={file.childImageSharp.fluid}
       alt="Photo by Aaron Burden on Unsplash"
     />
   );

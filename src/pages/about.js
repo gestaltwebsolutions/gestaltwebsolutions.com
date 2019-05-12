@@ -31,13 +31,13 @@ export default function About() {
         title="About"
         description={`
         Meet the team that created Gestalt Web Solutions LLC. Jeremy has been
-        writing software for over a decade using a variety of languages and 
+        writing software for over a decade using a variety of languages and
         frameworks. Ryan can conquer any technical obstacle with his own blend
         of ingenuity and grit.
       `}
       />
       <h1 className="text-xl">Meet the Team</h1>
-      <div className="flex justify-around">
+      <div className="flex flex-wrap justify-around">
         <Profile
           name="Jeremy Liberman"
           position="Founder, Designer"
@@ -72,7 +72,7 @@ function Profile(props) {
 
   return (
     <div
-      className={`relative w-1/3 m-2 shadow-lg rounded-b-lg border-t-2 border-${color}-dark my-20 bg-grey-lightest text-${color}-darker pb-1`}
+      className={`relative w-full lg:w-1/3 m-2 shadow-lg rounded-b-lg border-t-2 border-${color}-dark my-20 bg-grey-lightest text-${color}-darker pb-1`}
     >
       <div className="absolute pin-t pin-r mt-2 mr-2">
         {twitter && (
@@ -95,8 +95,7 @@ function Profile(props) {
       </div>
 
       <div
-        className={`mx-auto rounded-full bg-${color}-dark -mt-16 p-px`}
-        style={{ width: 150, height: 150 }}
+        className={`w-1/3 mx-auto rounded-full bg-${color}-dark -mt-16 p-px`}
       >
         <Img fluid={file.childImageSharp.fluid} className="rounded-full" />
       </div>
