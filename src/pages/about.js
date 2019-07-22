@@ -55,7 +55,9 @@ export default function About() {
           name="Ryan Johnson"
           position="Founder, Engineer"
           bio={`
-            Ryan likes a lot of cayenne peppers in his enchiladas.
+            Ryan has been a software developer in Microsoft technologies for 
+            nearly 5 years, with additional experience in computer networking
+            and enterprise system administration since 2006.
           `}
           github="ryanxjohnson"
           file={ryan}
